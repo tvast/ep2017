@@ -1,0 +1,87 @@
+{% extends "simulateurelections2017/base.html" %}
+{% load static %}
+
+
+{% block content %}
+<header>
+    <div class="container center" id="maincontent" tabindex="-1">
+        <div class="row">
+            <div class="col-lg-12">
+
+                <div class="intro-text">
+                    <h1 class="name"></h1>
+                    <h2 class="center header text_h2">élections présidentielles 2017<span class="span_h2">prognostic</span>.</h2> 
+                    <h4 class="center header text_h2">Nous vous proposons d'essayer de deviner ce que feront les partisans de chaque candidat du 1er tour.</h4>
+                    <a class="waves-effect waves-light btn black"><i class="material-icons left">input</i>Simuler le résultat</a>
+                    <hr class="star-light">
+                    <span class="skills">Simulateur du 2nd tour selon les résultats du 1er tour</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<section id="portfolio">
+    <div class="center">
+        <div class="row">
+            <div class="col s12 text-center">
+                <h2>Simulateur</h2>
+
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<div class="container">
+    <div class="row">
+        <div class="input-field col s6">
+            <img width="30%" src="http://www.voxe.org/wp-content/uploads/2017/03/Marine-le-pen-fiche-candidat.jpeg">
+
+            <br>
+            La france en marche</div>
+            <!-- <div class="row col s6"><img src={% static "simulateurelections2017/img/project5.png" %}></div> -->
+
+
+            <div class="input-field col s6">{% if envoi %}Il manque des données !{% endif %}
+                <form action="{% url "accueil" %}" method="post">
+                   <!--  {% csrf_token %}
+                    {{ form.as_p }} -->
+                    <p>"% s'abstiendront au second tour"</p>
+                      <p class="range-field">
+      <input type="range" id="test5" min="0" max="100" />
+    </p>
+    <p>"% voteront pour macron "</p>
+      <p class="range-field">
+      <input type="range" id="test5" min="0" max="100" />
+    </p>
+                    <input type="submit" value="Submit" />
+                </form></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="input-field col s6">
+                    <img width="30%" src="https://www.buzzbeed.com/wp-content/uploads/2017/02/macron.jpg">
+
+                    <br>
+                    La france en marche</div>
+                    <!-- <div class="row col s6"><img src={% static "simulateurelections2017/img/project5.png" %}></div> -->
+
+
+                    <div class="input-field col s6">{% if envoi %}Il manque des données !{% endif %}
+                        <form action="{% url "accueil" %}" method="post">
+                        <!--     {% csrf_token %}
+                            {{ form.as_p }} -->
+                              <p class="range-field">
+                              <p>"% s'abstiendront au second tour"</p>
+      <input type="range" id="test5" min="0" max="100" />
+    </p>  <p class="range-field">
+    "% voteront pour macron "
+      <input type="range" id="test5" min="0" max="100" />
+    </p>
+                            <input type="submit" value="Submit" />
+                        </form></div>
+                    </div>
+                </div>
+            </div>
+
+            {% endblock %}

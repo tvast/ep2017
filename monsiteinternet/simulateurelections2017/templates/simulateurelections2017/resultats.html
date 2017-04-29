@@ -1,0 +1,38 @@
+{% extends "simulateurelections2017/base.html" %}
+{% load static %}
+
+
+{% block content %}
+    <header>
+        <div class="container" id="maincontent" tabindex="-1">
+            <div class="row">
+                <div class="col-lg-12">
+	                    <img class="img-responsive" src="{% static "simulateurelections2017/img/macron_lepen.jpg" %}" alt="">
+	                    <div class="intro-text">
+	                        <h1 class="name">élections présidentielles 2017</h1>
+	                        <hr class="star-light">
+	                        <span class="skills">Simulateur du 2nd tour selon les résultats du 1er tour</span>
+	                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+<section id="portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Résultats de la simulation</h2>
+                <hr class="star-primary">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Emmanuel Macron obtient {{pv_mac}}% des voix</h2>
+                <h2>Marine Le Pen obtient {{pv_lp}}% des voix</h2>
+                <hr class="star-primary">
+            </div>
+        </div>
+    </div>
+    <p>
+</section>
+{% endblock %}
