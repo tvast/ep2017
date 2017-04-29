@@ -2,15 +2,15 @@
     $(function() {
         $('.button-collapse').sideNav();
         $('.scrollspy').scrollSpy();
-        var animationDelay = 1500,
-            barAnimationDelay = 3800,
-            barWaiting = barAnimationDelay - 1000,
-            lettersDelay = 20,
-            typeLettersDelay = 150,
-            selectionDuration = 200,
-            typeAnimationDelay = selectionDuration + 400,
-            revealDuration = 300,
-            revealAnimationDelay = 1500;
+        var animationDelay = 800,
+            barAnimationDelay = 200,
+            barWaiting = barAnimationDelay - 100,
+            lettersDelay = 10,
+            typeLettersDelay = 75,
+            selectionDuration = 100,
+            typeAnimationDelay = selectionDuration + 200,
+            revealDuration = 150,
+            revealAnimationDelay = 750;
         initHeadline();
 
         function initHeadline() {

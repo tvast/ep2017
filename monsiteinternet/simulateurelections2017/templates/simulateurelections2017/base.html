@@ -1,7 +1,7 @@
 {% load static %}
 
 
-  
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,47 +14,51 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href={% static "simulateurelections2017/min/plugin-min.css" %} type="text/css" rel="stylesheet">
     <link href={% static "simulateurelections2017/min/custom-min.css" %} type="text/css" rel="stylesheet" >
+    <link href={% static "simulateurelections2017/css/style.css" %} type="text/css" rel="stylesheet" >
+      <script href={% static "simulateurelections2017/js/isNone.js" %} type="text/javascript" src="">
+ 
+</script>
 </head>
 <body id="top" class="scrollspy">
 
-<!-- Pre Loader -->
-<div id="loader-wrapper">
-    <div id="loader"></div>
- 
-    <div class="loader-section section-left"></div>
-    <div class="loader-section section-right"></div>
- 
-</div>
+    <!-- Pre Loader -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
 
-<!--Navigation-->
- <div class="navbar-fixed">
-    <nav id="nav_f" class="default_color" role="navigation">
-        <div class="container">
-            <div class="nav-wrapper">
-            <a href="#" id="logo-container" class="brand-logo">Elysée 2017</a>
-                <ul class="right hide-on-med-and-down">
-                    <li><a href="#portfolio">Simulateur</a></li>
-                    <li><a href="#work">A propos</a></li>
-                </ul>
-                <ul id="nav-mobile" class="side-nav">
-                   <li><a href="#index-banner">Simulateur</a></li>
-                    <li><a href="#work">A propos</a></li>
-                </ul>
-            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-            </div>
-        </div>
-    </nav>
-</div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
 
-  
+    </div>
 
-<!--Hero-->
+    <!--Navigation-->
+    <div class="navbar-fixed">
+        <nav id="nav_f" class="default_color" role="navigation">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="#" id="logo-container" class="brand-logo">Elysée 2017</a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="#portfolio">Simulateur</a></li>
+                        <li><a href="#work">A propos</a></li>
+                    </ul>
+                    <ul id="nav-mobile" class="side-nav">
+                     <li><a href="#portfolio">Simulateur</a></li>
+                     <li><a href="#work">A propos</a></li>
+                 </ul>
+                 <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+             </div>
+         </div>
+     </nav>
+ </div>
+
+
+
+ <!--Hero-->
  <div class="section no-pad-bot" id="index-banner">
     <div class="container center">
         <h1 class="text_h center header cd-headline letters type">
             <span>Elysée 2017 :</span> 
             <span class="cd-words-wrapper waiting">
-            <br>
+                <br>
                 <b class="is-visible">Macron</b>
                 <b>Le Pen</b>
                 <b>Qui sera au pouvoir ?</b>
@@ -70,18 +74,22 @@
             <div  class="col s12 center">
                 <h2 class="center header text_h2">Bienvenue sur le simulateur de résultat du second tour des <span class="span_h2">présidentielles</span>.</h2> 
                 <h4 class="center header text_h2">Nous vous proposons d'essayer de deviner ce que feront les partisans de chaque candidat du 1er tour.</h4>
-                <a class="waves-effect waves-light btn black"><i class="material-icons left">input</i>Simuler le résultat</a>
+                <a class="waves-effect waves-light btn black"><i onclick="toggleDisplay()" class="material-icons left">input</i>Simuler le résultat</a>
             </div>
         </div>
     </div>
 </div>
 <div class="parallax-container">
-    <div class="parallax"><img src={% static "simulateurelections2017/img/miel2.jpg" %}></div>
+    <div class="parallax"><img src="http://img1.closermag.fr/var/closermag/storage/images/media/images-des-contenus/actu-people/politique/20160422/l-elysee-en-avril-20162/5179186-1-fre-FR/L-Elysee-en-avril-2016_exact1024x768_l.jpg" %}></div>
 </div>
 
-{% block content %}
-<!-- Header -->
-{% endblock %}
+<div >
+    {% block content %}
+
+    {% endblock %}
+</div>
+
+
 
 <!--Parallax-->
 
@@ -113,67 +121,67 @@
                             <button class="btn waves-effect waves-light red darken-1" type="sub
 
                             t">Submit
-                                <i class="mdi-content-send right white-text"></i>
-                            </button>
-                        </div>
+                            <i class="mdi-content-send right white-text"></i>
+                        </button>
                     </div>
-                </form>
-            </div>
-            <div class="col l3 s12">
-                <h5 class="white-text">joashpereira.com</h5>
-                <ul>
-                    <li><a class="white-text" href="http://www.joashpereira.com/">Home</a></li>
-                    <li><a class="white-text" href="http://www.joashpereira.com/blog">Blog</a></li>
-                </ul>
-            </div>
-            <div class="col l3 s12">
-                <h5 class="white-text">Social</h5>
-                <ul>
-                    <li>
-                        <a class="white-text" href="https://www.behance.net/joashp">
-                            <i class="small fa fa-behance-square white-text"></i> Behance
-                        </a>
-                    </li>
-                    <li>
-                        <a class="white-text" href="https://www.facebook.com/joash.c.pereira">
-                            <i class="small fa fa-facebook-square white-text"></i> Facebook
-                        </a>
-                    </li>
-                    <li>
-                        <a class="white-text" href="https://github.com/joashp">
-                            <i class="small fa fa-github-square white-text"></i> Github
-                        </a>
-                    </li>
-                    <li>
-                        <a class="white-text" href="https://www.linkedin.com/in/joashp">
-                            <i class="small fa fa-linkedin-square white-text"></i> Linkedin
-                        </a>
-                    </li>
-                </ul>
-            </div>
+                </div>
+            </form>
+        </div>
+        <div class="col l3 s12">
+            <h5 class="white-text">joashpereira.com</h5>
+            <ul>
+                <li><a class="white-text" href="http://www.joashpereira.com/">Home</a></li>
+                <li><a class="white-text" href="http://www.joashpereira.com/blog">Blog</a></li>
+            </ul>
+        </div>
+        <div class="col l3 s12">
+            <h5 class="white-text">Social</h5>
+            <ul>
+                <li>
+                    <a class="white-text" href="https://www.behance.net/joashp">
+                        <i class="small fa fa-behance-square white-text"></i> Behance
+                    </a>
+                </li>
+                <li>
+                    <a class="white-text" href="https://www.facebook.com/joash.c.pereira">
+                        <i class="small fa fa-facebook-square white-text"></i> Facebook
+                    </a>
+                </li>
+                <li>
+                    <a class="white-text" href="https://github.com/joashp">
+                        <i class="small fa fa-github-square white-text"></i> Github
+                    </a>
+                </li>
+                <li>
+                    <a class="white-text" href="https://www.linkedin.com/in/joashp">
+                        <i class="small fa fa-linkedin-square white-text"></i> Linkedin
+                    </a>
+                </li>
+            </ul>
         </div>
     </div>
-    <div class="footer-copyright default_color">
-        <div class="container">
-            Made by <a class="white-text" href="http://joashpereira.com">Joash Pereira</a>. Thanks to <a class="white-text" href="http://materializecss.com/">materializecss</a>
-        </div>
+</div>
+<div class="footer-copyright default_color">
+    <div class="container">
+        Made by <a class="white-text" href="http://joashpereira.com">Joash Pereira</a>. Thanks to <a class="white-text" href="http://materializecss.com/">materializecss</a>
     </div>
+</div>
 </footer>
 
 
-    <!--  Scripts-->
+<!--  Scripts-->
   <!--   <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script> -->
   <script type="text/javascript" src={% static "simulateurelections2017/js/jquery-2.1.1.min.js" %}></script>
 
-  <script type="text/javascript" src={% static "simulateurelections2017/js/init.js" %}></script>
-
   
-    <script type="text/javascript" src={% static "simulateurelections2017/min/plugin-min.js" %}></script> 
-    <script type="text/javascript" src={% static "simulateurelections2017/min/custom-min.js" %}></script>
-    
+  <script type="text/javascript" src={% static "simulateurelections2017/min/plugin-min.js" %}></script> 
+  <script type="text/javascript" src={% static "simulateurelections2017/min/custom-min.js" %}></script>
+
+
+
    <!--  <script type="text/javascript">
           var slider = document.getElementById('test5');
   noUiSlider.create(slider, {
@@ -188,7 +196,7 @@
      decimals: 0
    })
   });
-    </script> -->
+</script> -->
 
-    </body>
+</body>
 </html>
