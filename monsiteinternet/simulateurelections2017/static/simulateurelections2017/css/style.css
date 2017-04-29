@@ -17,8 +17,8 @@
 
 
 #index-banner {
-    min-height: 632px;
-    max-height: 864px;
+    min-height: 480px;
+    max-height: 400px;
     position: relative;
     background-color: #444;
 }

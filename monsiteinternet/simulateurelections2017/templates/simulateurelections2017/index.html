@@ -20,7 +20,7 @@
     </div>
 </header>
 <section id="portfolio">
-    <div class="center">
+    <div class="center isNone foo">
         <div class="row">
             <div class="col s12 text-center">
                 <h2>Simulateur</h2>
@@ -30,9 +30,10 @@
     </div>
 </div>
 </section>
-<div class="container">
+<div id="mp" class="container isNone foo zoomIn animate">
     <div class="row z-depth-4">
         <div class="input-field col s6">
+            <h2>Marine Le Pen</h2>
             <img class="img-circle" width="100%" src="http://www.voxe.org/wp-content/uploads/2017/03/Marine-le-pen-fiche-candidat.jpeg">
 
             <br>
@@ -44,6 +45,7 @@
                 <form action="{% url "accueil" %}" method="post">
                    <!--  {% csrf_token %}
                     {{ form.as_p }} -->
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
                     <p>"% s'abstiendront au second tour"</p>
                       <p class="range-field">
       <input type="range" id="test5" min="0" max="100" />
@@ -56,9 +58,10 @@
                 </form></div>
             </div>
         </div>
-        <div class="container">
+        <div id="em" class="container isNone foo zoomIn animate">
             <div class="row z-depth-4">
                 <div class="input-field col s6">
+                <h2>Emmanuel Macron</h2>
                     <img class="img-circle" width="100%" src="https://www.buzzbeed.com/wp-content/uploads/2017/02/macron.jpg">
 
                     <br>
@@ -71,10 +74,10 @@
                         <!--     {% csrf_token %}
                             {{ form.as_p }} -->
                               <p class="range-field">
-                              <p>"% s'abstiendront au second tour"</p>
+                              <h5>"% s'abstiendront au second tour"</h5>
                               <input type="range" id="test5" min="0" max="100" />
-                            </p>  <p class="range-field">
-                            "% voteront pour macron "
+                            </p>  <h5 class="range-field">
+                            "% voteront pour macron ></h5>
                               <input type="range" id="test5" min="0" max="100" />
                             </p>
                             <input type="submit" value="Submit" />
